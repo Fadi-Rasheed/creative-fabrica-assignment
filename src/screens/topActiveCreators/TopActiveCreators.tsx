@@ -1,11 +1,10 @@
-import { useEffect, useState } from 'react'
-
 import { Card } from '../../components/Card'
 import { Main } from '../../sections/Main'
+import { useCreators } from '../../services/creatorsProducts/useCreators'
 
 export const TopActiveCreators = () => {
-  const [activeCreators, setActiveCreators] = useState()
-  useEffect(() => {}, [])
+  const data = useCreators()
+
   return (
     <Main>
       <Card title="1" description="a" />
