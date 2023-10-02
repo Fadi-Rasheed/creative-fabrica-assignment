@@ -5,5 +5,5 @@ interface HeaderItem {
 }
 
 export interface HeaderProps {
-  HeaderItems: HeaderItem[]
+  headerItems: HeaderItem[]
 }

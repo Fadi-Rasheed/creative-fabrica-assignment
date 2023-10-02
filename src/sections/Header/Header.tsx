@@ -3,12 +3,16 @@ import type { FC } from 'react'
 import { Link } from '../../components/Link'
 import type { HeaderProps } from './types'
 
-export const Header: FC<HeaderProps> = ({ HeaderItems }) => (
+export const Header: FC<HeaderProps> = ({ headerItems }) => (
   <header>
-    {HeaderItems.map(({ href, label, ariaLabel }) => (
-      <Link aria-label={ariaLabel} href={href} key={`${label}-${href}`}>
-        {label}
-      </Link>
-    ))}
+    <ul>
+      {headerItems.map(({ href, label, ariaLabel }) => (
+        <li key={`${label}-${href}`}>
+          <Link aria-label={ariaLabel} href={href}>
+            {label}
+          </Link>
+        </li>
+      ))}
+    </ul>
   </header>
 )

@@ -5,5 +5,5 @@ interface FooterItem {
 }
 
 export interface FooterProps {
-  FooterItems: FooterItem[]
+  footerItems: FooterItem[]
 }
