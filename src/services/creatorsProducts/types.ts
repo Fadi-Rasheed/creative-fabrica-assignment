@@ -1,9 +1,9 @@
-interface Creator {
+export interface Creator {
   id: string
   email: string
 }
 
-interface Product {
+export interface Product {
   id: string
   creatorId: string
   createTime: string
