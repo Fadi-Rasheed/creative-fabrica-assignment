@@ -18,11 +18,11 @@ export const TopActiveCreators = () => {
   )
 
   return (
-    <section className="p-8">
-      <h1 className="text-4xl font-extrabold text-center my-8">Top Active Creators</h1>
-      <ul className="flex flex-col items-center justify-around py-6 lg:flex-row">
+    <section className="p-4">
+      <h1 className="text-4xl font-extrabold text-center my-4 lg:my-8">Top Active Creators</h1>
+      <ul className="flex flex-col items-center justify-around py-4 lg:py-6 lg:flex-row">
         {topCreators.map(({ creatorEmail }, i) => (
-          <li key={creatorEmail} className="py-6">
+          <li key={creatorEmail} className="w-80 py-4 lg:py6">
             <Card title={`${i + 1}`} description={creatorEmail} />
           </li>
         ))}
