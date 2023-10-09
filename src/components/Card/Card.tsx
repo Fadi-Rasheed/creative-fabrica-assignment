@@ -3,8 +3,8 @@ import type { FC } from 'react'
 import type { ICard } from './types'
 
 export const Card: FC<ICard> = ({ title, description }) => (
-  <div className="max-w-sm rounded overflow-hidden shadow-lg px-6 py-4">
-    <h3 className="font-bold text-xl mb-2">{title}</h3>
+  <div className="max-w-sm border border-gray-200 rounded overflow-hidden shadow-lg p-8 hover:bg-gray-100">
+    <h3 className="font-bold text-xl mb-4 text-center">{title}</h3>
     <p className="text-gray-700 text-base">{description}</p>
   </div>
 )
