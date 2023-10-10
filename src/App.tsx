@@ -1,21 +1,20 @@
 /* eslint-disable import/no-default-export */
 
-import { AppErrorBoundary } from './AppErrorBoundary'
+import { AppWrapper } from './AppWrapper'
 import { FOOTER_PROPS, HEADER_PROPS } from './constants'
 import { TopActiveCreators } from './screens/topActiveCreators/TopActiveCreators'
 import { Footer } from './sections/Footer'
 import { Header } from './sections/Header'
-import { QueryProvider } from './services/QueryProvider'
 
 function App() {
   return (
-    <AppErrorBoundary>
-      <QueryProvider>
-        <Header headerItems={HEADER_PROPS} />
+    <AppWrapper>
+      <Header headerItems={HEADER_PROPS} />
+      <main className="grow flex flex-col">
         <TopActiveCreators />
-        <Footer footerItems={FOOTER_PROPS} />
-      </QueryProvider>
-    </AppErrorBoundary>
+      </main>
+      <Footer footerItems={FOOTER_PROPS} />
+    </AppWrapper>
   )
 }
 

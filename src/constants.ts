@@ -1,21 +1,21 @@
 export const HEADER_PROPS = [
-  { label: 'Fonts', href: 'https://www.creativefabrica.com/fonts/', ariaLabel: 'Fonts' },
-  { label: 'PNGS', href: 'https://www.creativefabrica.com/png/', ariaLabel: 'PNGS' },
-  { label: 'Graphics', href: 'https://www.creativefabrica.com/graphics/', ariaLabel: 'Graphics' },
-  { label: '3D', href: 'https://www.creativefabrica.com/3d-svg/', ariaLabel: '3D' },
+  { label: 'Fonts', href: '#', ariaLabel: 'Fonts' },
+  { label: 'PNGS', href: '#', ariaLabel: 'PNGS' },
+  { label: 'Graphics', href: '#', ariaLabel: 'Graphics' },
+  { label: '3D', href: '#', ariaLabel: '3D' },
   {
     label: 'Spark',
-    href: 'https://www.creativefabrica.com/spark/"',
+    href: '#',
     ariaLabel: 'Spark',
   },
 ]
 
 export const FOOTER_PROPS = [
-  { label: 'Reviews', href: 'https://www.creativefabrica.com/reviews/', ariaLabel: 'Reviews' },
-  { label: 'Tags', href: 'https://www.creativefabrica.com/tag/', ariaLabel: 'Tags' },
+  { label: 'Reviews', href: '#', ariaLabel: 'Reviews' },
+  { label: 'Tags', href: '#', ariaLabel: 'Tags' },
   {
     label: 'Popular Searches',
-    href: 'https://www.creativefabrica.com/popular-searches/',
+    href: '#',
     ariaLabel: 'Popular Searches',
   },
 ]
