@@ -19,3 +19,5 @@ export const FOOTER_PROPS = [
     ariaLabel: 'Popular Searches',
   },
 ]
+
+export const NUMBER_OF_TOP_CREATORS = 3
