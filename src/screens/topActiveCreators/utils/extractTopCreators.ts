@@ -13,7 +13,7 @@ export const extractTopCreators = (rank: number, mappedCreators?: MappedProducts
   })
 
   const topCreators = sortedCreators.slice(0, rank)
-  const rest = sortedCreators.slice(rank + 1)
+  const rest = sortedCreators.slice(rank)
 
   return { topCreators, rest }
 }

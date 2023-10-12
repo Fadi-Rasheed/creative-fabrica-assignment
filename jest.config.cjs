@@ -3,8 +3,12 @@ module.exports = {
   collectCoverageFrom: [
     'src/**/*.{ts,tsx}',
     '!src/index.tsx',
-    '!src/playroom.tsx',
-    '!src/**/{__stories__,__tests__,types}/**',
+    '!src/services/**/*.{ts,tsx}',
+    '!src/App.tsx',
+    '!src/AppErrorBoundary.tsx',
+    '!src/AppWrapper.tsx',
+    '!src/main.tsx',
+    '!src/vite-env.d.ts',
   ],
   coverageThreshold: {
     global: {
